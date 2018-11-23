@@ -1,0 +1,83 @@
+/**
+ * gridmanager-reset.less
+ * @author wangbo
+ * @since 2018/11/20
+ */
+.grid-wrap,
+.receive-address-grid-wrap,
+.customer-card-grid-wrap,
+.marketing-grid-wrap,
+.evaluation-grid-wrap,
+.interactive-grid-wrap,
+.preferential-grid-wrap,
+.order-grid-style{
+	.th-text {
+		color: #666 !important;
+		font-weight: lighter !important;
+	}
+	.footer-toolbar {
+		background: #f6f6f6 !important;
+		background-image: none !important;
+		.change-size {
+			position: absolute !important;
+			right: 0 !important;
+		}
+		.page-size-info {
+			width: 120px;
+			position: absolute;
+			top: 7px;
+			right: 122px;
+			text-align: center;
+			z-index: 2;
+			.gp-input{
+				width: 34px;
+				height: 26px;
+				padding: 0 4px;
+				text-align: center;
+				margin-right: 4px;
+			}
+		}
+		.ajax-page {
+			right: 60px !important;
+			.iconfont {
+				font-family: 'iconfont' !important;
+			}
+			.pagination > li {
+				color: #b4b4b4;
+				border: none !important;
+				background: #f6f6f6 !important;
+				padding: 6px 10px !important;
+				display: none;
+			}
+			.previous-page, .first-page {
+				display: block !important;
+				-webkit-transform: rotate(180deg) !important;;
+				-moz-transform: rotate(180deg) !important;;
+				-ms-transform: rotate(180deg) !important;;
+				-o-transform: rotate(180deg) !important;;
+				transform: rotate(180deg) !important;;
+			}
+			.last-page, .next-page {
+				display: block !important;
+			}
+			.next-page {
+				margin-left: 100px;
+			}
+			.active{
+				color: #1890ff !important;
+			}
+			.disabled {
+				color: #d1d1d1 !important;
+			}
+		}
+		&[no-totals-mode="true"] {
+			.next-page {
+				margin-left: 0;
+			}
+			.page-size-info {
+				display: none;
+			}
+		}
+	}
+}
+

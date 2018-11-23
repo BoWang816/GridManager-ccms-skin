@@ -3,7 +3,6 @@
  * @date on 2017/12/12
  */
 const path = require('path');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (srcCodeDir, idDev) => {
 	return [
@@ -15,11 +14,20 @@ module.exports = (srcCodeDir, idDev) => {
 		},
 		{
 			test: /\.css$/,
-            use: ExtractTextWebpackPlugin.extract({
-                use: [{
-                    loader: 'css-loader',
-                }]
-            })
+            use: [{
+				loader: 'css-loader',
+			}],
+			include: [path.join(__dirname, srcCodeDir)]
+		}, {
+			test: /\.less/,
+			use: [{
+                loader: 'style-loader'
+            },{
+				loader: 'css-loader'
+			}, {
+				loader: 'less-loader'
+			}],
+			include: [path.join(__dirname, srcCodeDir)]
 		}
 	]
 };

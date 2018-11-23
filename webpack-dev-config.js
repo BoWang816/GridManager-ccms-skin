@@ -23,16 +23,6 @@ const config = {
 		moduleExtensions: ['-loader']
 	},
 
-    // 以插件形式定制webpack构建过程
-    plugins: [
-        // 将样式文件 抽取至独立文件内
-        new ExtractTextWebpackPlugin({
-            filename: 'webpack-dev-file/css/gm-angular.css',
-            disable: false,
-            allChunks: true
-        })
-    ],
-
 	// 文件导出的配置
 	output:{
 		// path: '/' ,
