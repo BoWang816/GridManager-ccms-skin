@@ -1,6 +1,6 @@
 const path = require('path');
 const genRules = require('./webpack-common.loader');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const config = {
 	// map
 	devtool : 'source-map',  // TODO  http://www.css88.com/doc/webpack2/configuration/devtool/
