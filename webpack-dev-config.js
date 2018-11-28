@@ -26,7 +26,7 @@ const config = {
 	// 文件导出的配置
 	output:{
 		// path: '/' ,
-		filename: "webpack-dev-file/js/gm-angular.js",
+		filename: "webpack-dev-file/js/index.js",
 		// publicPath 对于热替换（HMR）是必须的，让webpack知道在哪里载入热更新的模块（chunk）
 		publicPath: "/"
 	},

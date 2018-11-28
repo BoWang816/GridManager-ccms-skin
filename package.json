@@ -36,10 +36,11 @@
         "copy-webpack-plugin": "^4.5.0",
         "css-loader": "^0.28.10",
         "express": "^4.16.3",
-        "gridmanager-angular-1.x": "^0.0.9",
+        "gridmanager-angular-1.x": "^0.0.11",
         "less": "^3.8.1",
         "less-loader": "^4.1.0",
         "style-loader": "^0.20.3",
+        "ccms-components": "^2.36.0-0",
         "webpack": "2.7.0",
         "webpack-dev-middleware": "^2.0.4"
     }

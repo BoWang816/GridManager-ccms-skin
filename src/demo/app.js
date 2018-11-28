@@ -1,13 +1,12 @@
 /**
- * Created by baukh on 18/4/11.
+ * Created by bo.wang on 18/11/20.
  */
-import gridManagerModule from '../js/index';
-var app = angular.module("myApp", [gridManagerModule]);
+import '../js/index';
+var app = angular.module("myApp", ['gridManagerAngular']);
 app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', function($window, $rootScope, $scope, $element) {
     $scope.testClick = (row) => {
         console.log('click', row);
     };
-
     // 常量: 搜索条件
     $scope.TYPE_MAP = {
         '1': 'HTML/CSS',
@@ -19,21 +18,20 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         '7': '前端相关'
     };
     $scope.option = {
-        gridManagerName: 'testAngular',
+        gridManagerName: 'gridManager-ccms-skin',
         width: '100%',
         height: '100%',
-        supportAjaxPage:true,
-        isCombSorting: true,
+        dataKey: 'data',
+        totalsKey: 'totals',
+        // supportAjaxPage:true,
+        // isCombSorting: true,
         ajax_data: function () {
             return 'https://www.lovejavascript.com/blogManager/getBlogList';
         },
         ajax_type: 'POST',
 
         // 使用无总页模式
-        useNoTotalsMode: true,
-
-        // 指定接口返回无总页数据，这个参数仅是demo演示所需的数据，配置是否使用无总页模式的字段为: useNoTotalsMode
-        query: {noTotals: true},
+        // useNoTotalsMode: true,
         // topFullColumn: {
         //     template: function(row){
         //         return `<div style="padding: 12px; text-align: center;">
@@ -145,12 +143,12 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
                 align: 'center',
                 text: '<span style="color: red">操作</span>',
                 // 直接返回 htmlString
-                template: '<span class="plugin-action" gm-click="delectRowData">删除</span>'
+                template: '<span class="plugin-action" gm-click="deleteRowData">删除</span>'
             }
         ]
     };
 
-    $scope.delectRowData = function(row) {
+    $scope.deleteRowData = function(row) {
         var table = $element[0].querySelector('table[grid-manager="testAngular"]');
         if(window.confirm('确认要删除['+row.name+']?')){
             console.log('----删除操作开始----');

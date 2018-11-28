@@ -25,5 +25,3 @@ GridManager适配组件库样式
     - last-page
     - first-page
     - page-info 自定义了页信息
-
-
