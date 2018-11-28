@@ -40,7 +40,6 @@
         "less": "^3.8.1",
         "less-loader": "^4.1.0",
         "style-loader": "^0.20.3",
-        "ccms-components": "^2.36.0-0",
         "webpack": "2.7.0",
         "webpack-dev-middleware": "^2.0.4"
     }
