@@ -15,7 +15,6 @@ import './gridmanager-reset.less';
         supportAjaxPage: true,    // 默认支持分页
         supportAdjust: true,      // 默认不支持列宽度调整
         disableLine: true,        // 默认不支持列分割线显示
-        supportMenu: false,       // 默认不支持右键
         dataKey: 'list',          // 数据使用后端返回的list数组
         showFooterPageInfo: true, // 默认显示页数据信息
         showFooterGoTo: false,    // 默认不显示自带的跳转框
