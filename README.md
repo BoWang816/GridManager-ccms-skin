@@ -2,7 +2,6 @@
 
 GridManager适配组件库样式
 
-
 ## 修改原始配置项
 
 - dataKey 设置为'list'
@@ -20,6 +19,7 @@ GridManager适配组件库样式
 - loadingTemplate 设置默认loading模版
 - refresh-action 设置刷新按钮模版
 - textConfig: 翻页样式：设置了使用图标样式代替文本样式
+ 
     - next-page
     - previous-page
     - last-page
