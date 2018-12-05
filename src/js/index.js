@@ -8,6 +8,7 @@ import './gridmanager-reset.less';
     const defaultOption = {
         width: '100%',
         height: '100%',
+        supportMenu: false,       // 默认不支持右键菜单
         currentPageKey: 'pageNum',// 默认请求参数当页字段
         pageSizeKey: 'pageSize',  // 默认请求参数当页显示数据条数
         supportAutoOrder: false,  // 默认不支持自动产生序号
@@ -20,6 +21,7 @@ import './gridmanager-reset.less';
         showFooterGoTo: false,    // 默认不显示自带的跳转框
         showFooterCheckedInfo: false,  // 默认不显示选中描述信息
         skinClassName: 'ccms-skin', // 页样式名称
+        emptyTemplate: `<div class="empty-content init-msg"><span class="iconfont icon-caution warning"></span><span class="msg">无数据</span></div>`,
         loadingTemplate: `<section class="gm-ccms-loading">
                             <div class="loader">
                                 <svg class="circular" viewBox="25 25 50 50">

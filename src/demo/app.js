@@ -144,10 +144,23 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
                 text: '<span style="color: red">操作</span>',
                 // 直接返回 htmlString
                 template: '<span class="plugin-action" gm-click="deleteRowData">删除</span>'
-            }
+            },
+            {
+				key: 'config',
+				text: '<i class="iconfont icon-config" ng-click="$ctrl.disableConfig()"></i>',
+				align: 'left',
+				width: '30px',
+				disableCustomize: true,
+				template: () => {
+					return ' ';
+				}
+			}
         ]
     };
 
+    $scope.disableConfig = function() {
+        console.log(111);
+    }
     $scope.deleteRowData = function(row) {
         var table = $element[0].querySelector('table[grid-manager="testAngular"]');
         if(window.confirm('确认要删除['+row.name+']?')){

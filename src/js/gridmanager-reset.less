@@ -6,24 +6,76 @@
 .table-wrap.ccms-skin {
     .table-div table[grid-manager] thead[grid-manager-mock-thead] {
         background-color: #F1F1F1 !important;
+        background-image: none;
     }
-    .table-div table[grid-manager] tbody tr[emptytemplate] td{
-        background-color: #F1F1F1 !important;
-        padding: 0;
+    .table-div table[grid-manager] th {
+        padding: 0 !important;
+        .th-wrap {
+            padding: 6px !important;
+        }
     }
+
     .table-div table[grid-manager] tbody {
-        tr[row-hover="true"]>td, td[col-hover="true"]  {
+        tr > td {
+            height: 42px;
+            min-height: 42px;
+            padding: 6px;
+            > div {
+                white-space: normal;
+            }
+        }
+        tr[emptytemplate] td{
+            background-color: #FFF !important;
+            padding: 0;
+        }
+        tr[emptytemplate][row-hover="true"] td{
+            background-color: #FFF !important;
+            padding: 0;
+        }
+        tr td[col-hover=true] {
+            background: none;
+        }
+        tr[row-hover=true] td {
             background-color: #F1F8FB !important;
+        } 
+        tr:nth-child(odd) td[col-hover=true] {
+            background-color: #fafafa;
         }
         tr:nth-child(odd) td{
             background-color: #fafafa;
         }
-        tr > td {
-            height: 42px;
-            min-height: 42px;
-            padding: 0 11px;
-            .gm-emptyTemplate {
-                background: #FFF;
+        tr[top-full-column=false] td:first-child {
+            border: 0;
+        }
+        tr[top-full-column=true] {
+            border: 1px solid #EEEEEE;
+        }
+        tr[top-full-column=true] td .full-column-td {
+            border-top: 0;
+        }
+        tr[top-full-column-interval=true] td > div{
+            height: 6px;
+        }
+        tr[top-full-column=false]{
+            border: 0;
+        }
+        .init-msg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .warning {
+                color: #ddd;
+                font-size: 40px;
+            }
+            .msg {
+                font-size: 14px;
+                height: 40px;
+                margin-left: 15px;
+                line-height: 35px;
+                color: #999;    
+                vertical-align: bottom;
+                display: inline-block;
             }
         }
     }
