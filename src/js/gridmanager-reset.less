@@ -14,6 +14,12 @@
             padding: 6px !important;
         }
     }
+    .table-div table[grid-manager] tbody:hover tr td[col-hover=true] {
+        background: none;
+    }
+    .table-div table[grid-manager] tbody:hover tr[row-hover=true] td {
+        background-color: #F1F8FB !important;
+    }
 
     .table-div table[grid-manager] tbody {
         tr > td {
@@ -34,9 +40,6 @@
         }
         tr td[col-hover=true] {
             background: none;
-        }
-        tr[row-hover=true] td {
-            background-color: #F1F8FB !important;
         } 
         tr:nth-child(odd) td[col-hover=true] {
             background-color: #fafafa;
