@@ -21,7 +21,7 @@ import './gridmanager-reset.less';
         showFooterGoTo: false,    // 默认不显示自带的跳转框
         showFooterCheckedInfo: false,  // 默认不显示选中描述信息
         skinClassName: 'ccms-skin', // 页样式名称
-        emptyTemplate: `<div class="empty-content init-msg"><span class="iconfont icon-caution warning"></span><span class="msg">无数据</span></div>`,
+        emptyTemplate: `<div class="empty-content init-msg"><span class="iconfont icon-caution warning"></span><span class="msg">暂无数据</span></div>`,
         loadingTemplate: `<section class="gm-ccms-loading">
                             <div class="loader">
                                 <svg class="circular" viewBox="25 25 50 50">
