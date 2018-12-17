@@ -3,7 +3,8 @@
  * @author wangbo
  * @since 2018/11/20
  */
-.table-wrap.ccms-skin {
+.table-wrap.ccms-skin, 
+.table-wrap.ccms-skin.icon-follow-text {
     .table-div table[grid-manager] thead[grid-manager-mock-thead] {
         background-color: #F1F1F1 !important;
         background-image: none;
@@ -18,13 +19,11 @@
             }
         }
         .th-wrap .sorting-action {
-            display: none;
+            visibility: hidden;
         }
         .th-wrap:hover .sorting-action{
-            display: block;
+            visibility: visible;
             color: #0083BA !important;
-            top: 7px !important;
-            right: 65px !important;
         }
     }
     .table-div table[grid-manager] tbody:hover tr td[col-hover=true] {
@@ -101,6 +100,9 @@
         .th-text {
             color: #666;
             font-weight: 400;
+            i {
+                font-size: 16px !important;
+            }
         }
     }
 
@@ -204,9 +206,9 @@
     .gm-ccms-loading{
         // position: relative;
         width: 100%;
-        height: 100%;
+        height: calc(100% - 40px);
         position: absolute;
-        top: 0;
+        top: 40px;
         left: 0;
 
         .loader{
