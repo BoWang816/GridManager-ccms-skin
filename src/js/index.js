@@ -14,6 +14,7 @@ import './gridmanager-reset.less';
         supportAutoOrder: false,  // 默认不支持自动产生序号
         supportCheckbox: false,   // 默认不支持使用复选框选中
         supportAjaxPage: true,    // 默认支持分页
+        isIconFollowText: true,   // 默认使用表头相关按钮跟随表头文字
         supportAdjust: true,      // 默认不支持列宽度调整
         disableLine: true,        // 默认不支持列分割线显示
         dataKey: 'list',          // 数据使用后端返回的list数组

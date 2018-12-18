@@ -1,5 +1,9 @@
 # GridManager-ccms-skin
 
+## v0.0.20
+
+- 添加isIconFollowText: true，设置表头图标默认跟随表头文字
+
 ## v0.0.19
 
 - 解决列表数据加载时loading遮住表头导致排序按钮失焦问题；

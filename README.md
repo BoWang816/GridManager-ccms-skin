@@ -13,6 +13,7 @@ GridManager适配组件库样式
 - `supportAdjust` 设置为true
 - `disableLine` 设置为true
 - `supportMenu` 设置为false
+- `isIconFollowText`: 设置为true,
 - `showFooterPageInfo` 设置为true
 - `showFooterGoTo` 设置为false
 - `showFooterCheckedInfo` 设置为false
