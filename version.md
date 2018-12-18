@@ -1,5 +1,9 @@
 # GridManager-ccms-skin
 
+## v0.0.21
+
+- 降低page-info z-index为0，避免影响其他样式；
+
 ## v0.0.20
 
 - 添加isIconFollowText: true，设置表头图标默认跟随表头文字
