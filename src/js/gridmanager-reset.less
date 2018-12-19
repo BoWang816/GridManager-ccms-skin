@@ -87,7 +87,6 @@
                 font-size: 14px;
                 height: 40px;
                 margin-left: 15px;
-                line-height: 35px;
                 color: #999;    
                 vertical-align: bottom;
                 display: inline-block;
@@ -109,6 +108,7 @@
     .footer-toolbar {
         background: #f6f6f6 !important;
         background-image: none !important;
+        border: 1px solid transparent;
         .change-size {
             position: absolute !important;
             right: 0 !important;
@@ -116,10 +116,10 @@
         .page-size-info {
             width: 120px;
             position: absolute;
-            top: 7px;
+            top: 6px;
             right: 122px;
             text-align: center;
-            z-index: 0;
+            z-index: 1;
             .gp-input {
                 width: 34px;
                 height: 26px;
@@ -131,14 +131,14 @@
         .refresh-action {
             color: #666;
             i {
-                vertical-align: text-top;
+                vertical-align: -1px;
             }
             .refresh-label {
                 margin-left: 3px;
             }
         }
         .page-info {
-            line-height: 16px;
+            line-height: 20px;
             float: left;
             margin: 0 4px;
         }
@@ -153,6 +153,7 @@
                 }
             }
             .pagination{
+                height: 28px !important;
                 > li {
                     color: #929292;
                     border: none !important;
@@ -196,7 +197,6 @@
                 display: none !important;
             }
             .refresh-action {
-                padding: 8px !important;
                 position: absolute;
                 left: 0;
                 margin-left: 0;

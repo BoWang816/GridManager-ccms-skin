@@ -1,5 +1,13 @@
 # GridManager-ccms-skin
 
+## v0.0.23
+
+- 回退翻页z-index，解决无法跳转指定页问题；
+
+## v0.0.22
+
+- 调整page-size-info样式以及数据为空时的tips提示样式；
+
 ## v0.0.21
 
 - 降低page-info z-index为0，避免影响其他样式；
