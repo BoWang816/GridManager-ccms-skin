@@ -1,7 +1,7 @@
 {
     "name": "gridmanager-ccms-skin",
-    "version": "0.0.23",
-    "description": "gridmanager-skin for ccms",
+    "version": "0.0.24",
+    "description": "gridManager-skin for ccms",
     "main": "js/index.js",
     "scripts": {
         "start": "node server",
@@ -36,7 +36,7 @@
         "copy-webpack-plugin": "^4.5.0",
         "css-loader": "^0.28.10",
         "express": "^4.16.3",
-        "gridmanager-angular-1.x": "^0.0.24",
+        "gridmanager-angular-1.x": "^0.1.3",
         "less": "^3.8.1",
         "less-loader": "^4.1.0",
         "style-loader": "^0.20.3",

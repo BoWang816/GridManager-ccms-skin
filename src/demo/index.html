@@ -5,46 +5,18 @@
     <title>gm-ccms-skin</title>
     <script src="../../node_modules/angular/angular.min.js"></script>
     <link type="text/css" rel="stylesheet" href="../../node_modules/gridmanager-angular-1.x/css/gm-angular.css"/>
-    <!-- <link type="text/css" rel="stylesheet" href="../../node_modules/ccms-components/ccms-components.css"/> -->
     <script src="../../node_modules//gridmanager-angular-1.x/js/gm-angular.js"></script>
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <script src="/webpack-dev-file/js/index.js"></script>
     <style>
         .grid-main {
-            height: calc(100vh - 64px - 57px);
+            height: calc(100vh);
         }
     </style>
 </head>
 <body ng-app="myApp">
-    <div class="search-area">
-        <div class="sa-ele">
-            <label class="se-title">名称:</label>
-            <input class="se-con" name="name"/>
-        </div>
-        <div class="sa-ele">
-            <label class="se-title">使用说明:</label>
-            <input class="se-con" name="info"/>
-        </div>
-        <div class="sa-ele">
-            <label class="se-title">url:</label>
-            <input class="se-con" name="url"/>
-        </div>
-        <div class="sa-ele">
-            <button class="search-action">搜索</button>
-            <button class="reset-action">重置</button>
-            <button ng-click="testClick()">点击测试</button>
-        </div>
-    </div>
-    <br/>
-
     <div class="grid-main" ng-controller="AppController as vm">
         <grid-manager option="option"></grid-manager>
-    </div>
-
-    <div class="bottom-bar">
-        <button id="init-gm" disabled>init</button>
-        <button id="destroy-gm" disabled>destroy</button>
-        <a href="https://github.com/baukh789/GridManager-Angular-1.x/blob/master/src/demo/index.html" target="_blank">查看源码</a>
     </div>
 </body>
 </html>

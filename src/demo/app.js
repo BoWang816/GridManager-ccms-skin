@@ -1,11 +1,25 @@
 /**
  * Created by bo.wang on 18/11/20.
  */
+import gridManager from 'gridmanager-angular-1.x';
 import '../js/index';
-var app = angular.module("myApp", ['gridManagerAngular']);
-app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', function($window, $rootScope, $scope, $element) {
+var app = angular.module("myApp", [gridManager]);
+app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', '$gridManager', function($window, $rootScope, $scope, $element, $gridManager) {
+    // $scope.table = $element[0].querySelector('table[grid-manager="gridManager-ccms-skin"]');
     $scope.testClick = (row) => {
         console.log('click', row);
+    };
+    $scope.disableConfig = function() {
+        console.log($scope);
+        $gridManager.setConfigVisible('gridManager-ccms-skin');
+    };
+    $scope.deleteRowData = function(row) {
+        if(window.confirm('确认要删除['+row.info+']?')){
+            console.log('----删除操作开始----');
+            $gridManager.refreshGrid('gridManager-ccms-skin');
+            console.log('数据没变是正常的, 因为这只是个示例,并不会真实删除数据.');
+            console.log('----删除操作完成----');
+        }
     };
     // 常量: 搜索条件
     $scope.TYPE_MAP = {
@@ -32,13 +46,6 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
 
         // 使用无总页模式
         // useNoTotalsMode: true,
-        // topFullColumn: {
-        //     template: function(row){
-        //         return `<div style="padding: 12px; text-align: center;">
-        //                             快速、灵活的对Table标签进行实例化，让Table标签充满活力。该项目已开源, <a target="_blank" href="https://github.com/baukh789/GridManager">点击进入</a>github
-        //                         </div>`;
-        //     }
-        // },
         columnData: [
             {
                 key: 'pic',
@@ -143,11 +150,11 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
                 align: 'center',
                 text: '<span style="color: red">操作</span>',
                 // 直接返回 htmlString
-                template: '<span class="plugin-action" gm-click="deleteRowData">删除</span>'
+                template: '<span class="plugin-action" ng-click="deleteRowData(row)">删除</span>'
             },
             {
 				key: 'config',
-				text: '<i class="iconfont icon-config" ng-click="$ctrl.disableConfig()"></i>',
+				text: '<i class="iconfont icon-config" ng-click="disableConfig()"></i>',
 				align: 'left',
 				width: '30px',
 				disableCustomize: true,
@@ -156,18 +163,5 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
 				}
 			}
         ]
-    };
-
-    $scope.disableConfig = function() {
-        console.log(111);
-    }
-    $scope.deleteRowData = function(row) {
-        var table = $element[0].querySelector('table[grid-manager="testAngular"]');
-        if(window.confirm('确认要删除['+row.name+']?')){
-            console.log('----删除操作开始----');
-            table.GM('refreshGrid');
-            console.log('数据没变是正常的, 因为这只是个示例,并不会真实删除数据.');
-            console.log('----删除操作完成----');
-        }
     };
 }]);

@@ -1,5 +1,10 @@
 # GridManager-ccms-skin
 
+## v0.0.24
+
+- 删除组件库依赖，单独使用icon；
+- 完善demo；
+
 ## v0.0.23
 
 - 回退翻页z-index，解决无法跳转指定页问题；
