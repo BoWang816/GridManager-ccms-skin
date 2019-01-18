@@ -21,6 +21,16 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
             console.log('----删除操作完成----');
         }
     };
+    $scope.showTh = function() {
+        const dom = document.querySelectorAll('.th-wrap');
+        $gridManager.showTh('gridManager-ccms-skin', dom);
+
+    };
+    $scope.hideTh = function() {
+        const dom = document.querySelectorAll('.th-wrap');
+        $gridManager.hideTh('gridManager-ccms-skin',dom);
+
+    };
     // 常量: 搜索条件
     $scope.TYPE_MAP = {
         '1': 'HTML/CSS',
@@ -150,7 +160,9 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
                 align: 'center',
                 text: '<span style="color: red">操作</span>',
                 // 直接返回 htmlString
-                template: '<span class="plugin-action" ng-click="deleteRowData(row)">删除</span>'
+                template: '<span class="plugin-action" ng-click="deleteRowData(row)">删除</span>' +
+                    '<span class="plugin-action" ng-click="showTh()">显示</span>' +
+                    '<span class="plugin-action" ng-click="hideTh()">隐藏</span>'
             },
             {
 				key: 'config',
