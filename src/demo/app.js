@@ -85,7 +85,7 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
             },{
                 key: 'title',
                 remind: 'the title',
-                align: 'left',
+                align: 'center',
                 text: '标题',
                 sorting: '',
                 // 使用函数返回 ng template

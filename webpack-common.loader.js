@@ -13,6 +13,12 @@ module.exports = (srcCodeDir, idDev) => {
 			include: [path.join(__dirname, srcCodeDir)]
 		},
 		{
+			test: /\.html?$/,
+			loaders: ['html-loader'],
+			exclude: /(node_modules|bower_components)/,
+			include: [path.join(__dirname, srcCodeDir)]
+		},
+		{
 			test: /\.css$/,
             use: [{
 				loader: 'css-loader',

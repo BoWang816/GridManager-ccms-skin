@@ -123,20 +123,12 @@
             position: absolute !important;
             right: 0 !important;
         }
-        .page-size-info {
-            width: 120px;
-            position: absolute;
-            top: 6px;
-            right: 122px;
-            text-align: center;
-            z-index: 1;
-            .gp-input {
-                width: 34px;
-                height: 26px;
-                padding: 0 4px;
-                text-align: center;
-                margin-right: 4px;
-            }
+        .totals-count {
+            margin-left: 2px;
+            display: inline-block;
+            height: 30px;
+            padding: 7px;
+            vertical-align: middle;
         }
         .refresh-action {
             color: #666;
@@ -147,11 +139,7 @@
                 margin-left: 3px;
             }
         }
-        .page-info {
-            line-height: 20px;
-            float: left;
-            margin: 0 4px;
-        }
+
         .ajax-page {
             right: 60px !important;
             height: 28px !important;
@@ -160,6 +148,11 @@
                 font-size: 16px !important;
                 &:hover{
                     color: inherit;
+                }
+            }
+            .goto-page{
+                .gp-input{
+                    text-align: center;
                 }
             }
             .pagination{
@@ -177,9 +170,6 @@
                     &.disabled > svg {
                         fill: #d1d1d1 !important;
                     }
-                    // &:hover > svg{
-                    //     fill: #828282 !important;
-                    // }
                     &.first-page,
                     &.previous-page,
                     &.next-page,
@@ -194,23 +184,12 @@
                         -o-transform: rotate(180deg) !important;;
                         transform: rotate(180deg) !important;;
                     }
-                    &.next-page {
-                        margin-left: 100px;
-                    }
                 }
             }
         }
         &[no-totals-mode="true"] {
-            .next-page {
-                margin-left: 0 !important;
-            }
-            .page-size-info {
+            .goto-page {
                 display: none !important;
-            }
-            .refresh-action {
-                position: absolute;
-                left: 0;
-                margin-left: 0;
             }
         }
     }

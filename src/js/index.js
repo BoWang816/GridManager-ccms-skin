@@ -1,4 +1,5 @@
 import './gridmanager-reset.less';
+import ajaxPageTemplate from './ajaxPage.tpl.html';
 
 ((GridManager) => {
     if (!GridManager) {
@@ -32,38 +33,7 @@ import './gridmanager-reset.less';
                                 </svg>
                             </div>
                         </section>`,
-        textConfig: {
-            'next-page': {
-                'zh-cn': '<svg class="gm-next-page"><symbol id="icon-nextpage" viewBox="0 0 1024 1024"><path d="M206.864 85.579l659.438 428.751-659.438 428.751v-857.502z"></path></symbol><use xlink:href="#icon-nextpage"></use></svg>',
-                'zh-tw': '下一頁',
-                'en-us': 'next'
-            },
-            'previous-page': {
-                'zh-cn': '<svg class="gm-previous-page"><symbol id="icon-nextpage" viewBox="0 0 1024 1024"><path d="M206.864 85.579l659.438 428.751-659.438 428.751v-857.502z"></path></symbol><use xlink:href="#icon-nextpage"></use></svg>',
-                'zh-tw': '上一頁',
-                'en-us': 'previous'
-            },
-            'last-page': {
-                'zh-cn': '<svg class="gm-last-page"><symbol id="icon-lastpage" viewBox="0 0 1024 1024"><path d="M173.067 884.736v-753.664l580.71 376.831-580.71 376.831zM850.954 777.114h-104.243v-538.318h104.243v538.318z"  ></path></symbol><use xlink:href="#icon-lastpage"></use></svg>',
-                'zh-tw': '尾頁',
-                'en-us': 'last'
-            },
-            'first-page': {
-                'zh-cn': '<svg class="gm-first-page"><symbol id="icon-lastpage" viewBox="0 0 1024 1024"><path d="M173.067 884.736v-753.664l580.71 376.831-580.71 376.831zM850.954 777.114h-104.243v-538.318h104.243v538.318z"  ></path></symbol><use xlink:href="#icon-lastpage"></use></svg>',
-                'zh-tw': '首頁',
-                'en-us': 'first'
-            },
-            'refresh-action': {
-                'zh-cn': '<i class="iconfont icon-refresh"></i><span class="refresh-label">刷新</span>',
-                'zh-tw': '<i class="iconfont icon-refresh"></i>',
-                'en-us': '<i class="iconfont icon-refresh"></i>'
-            },
-            'page-info': {
-                'zh-cn': '<span class="page-info-totals">共{2}条</span><span class="page-size-info"><input type="text" class="gp-input" value="{3}"/>/ 共{4}页</span>',
-                'zh-tw': '此頁顯示 {0}-{1} 共{2}條',
-                'en-us': 'this page show {0}-{1} count {2}'
-            }
-        }
+        ajaxPageTemplate: ajaxPageTemplate
     };
 
     GridManager.defaultOption = defaultOption;
