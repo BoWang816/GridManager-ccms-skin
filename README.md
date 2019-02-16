@@ -2,6 +2,10 @@
 
 GridManager适配组件库样式
 
+[![npm version](https://img.shields.io/npm/v/gridmanager-ccms-skin.svg?style=flat)](https://www.npmjs.com/package/gridmanager-ccms-skin)
+[![install size](https://img.shields.io/github/languages/code-size/BoWang816/gridManager-ccms-skin.svg?style=flat)](https://packagephobia.now.sh/result?p=gridmanager-ccms-skin)
+[![npm downloads](https://img.shields.io/npm/dt/gridmanager-ccms-skin.svg?style=flat-square)](https://npm-stat.com/charts.html?package=gridmanager-ccms-skin)
+
 ## 修改原始配置项
 
 - `dataKey` 设置为'list'
