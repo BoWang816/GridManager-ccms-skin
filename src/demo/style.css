@@ -4,6 +4,9 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.grid-main {
+    height: calc(100vh);
+}
 .plugin-action{
     display: inline-block;
     color: steelblue;
