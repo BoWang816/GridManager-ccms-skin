@@ -31,12 +31,6 @@
             color: #0083BA !important;
         }
     }
-    .table-div table[grid-manager] tbody:hover tr td[col-hover=true] {
-        background: none;
-    }
-    .table-div table[grid-manager] tbody:hover tr[row-hover=true] td {
-        background-color: #F1F8FB !important;
-    }
 
     .table-div table[grid-manager] tbody {
         tr > td {
@@ -46,23 +40,6 @@
             > div {
                 white-space: normal;
             }
-        }
-        tr[emptytemplate] td{
-            background-color: #FFF !important;
-            padding: 0;
-        }
-        tr[emptytemplate][row-hover="true"] td{
-            background-color: #FFF !important;
-            padding: 0;
-        }
-        tr td[col-hover=true] {
-            background: none;
-        }
-        tr:nth-child(odd) td[col-hover=true] {
-            background-color: #fafafa;
-        }
-        tr:nth-child(odd) td{
-            background-color: #fafafa;
         }
         tr[top-full-column=false] td:first-child {
             border: 0;
@@ -150,18 +127,13 @@
                     color: inherit;
                 }
             }
-            .goto-page{
-                .gp-input{
-                    text-align: center;
-                }
-            }
             .pagination{
                 height: 28px !important;
                 > li {
                     border: none !important;
                     background: #f6f6f6 !important;
                     padding: 7px 10px;
-                    display: none;
+                    //display: none;
                     > svg {
                         width: 16px;
                         height: 16px;
@@ -170,31 +142,21 @@
                     &.disabled > svg {
                         fill: #d1d1d1 !important;
                     }
-                    &.first-page,
-                    &.previous-page,
-                    &.next-page,
-                    &.last-page {
-                        display: block;
-                    }
+                    //&.first-page,
+                    //&.previous-page,
+                    //&.next-page,
+                    //&.last-page {
+                    //    display: block;
+                    //}
                     &.previous-page,
                     &.first-page {
-                        -webkit-transform: rotate(180deg) !important;;
-                        -moz-transform: rotate(180deg) !important;;
-                        -ms-transform: rotate(180deg) !important;;
-                        -o-transform: rotate(180deg) !important;;
-                        transform: rotate(180deg) !important;;
+                        transform: rotate(180deg) !important;
                     }
                 }
             }
         }
-        &[no-totals-mode="true"] {
-            .goto-page {
-                display: none !important;
-            }
-        }
     }
     .gm-ccms-loading{
-        // position: relative;
         width: 100%;
         height: calc(100% - 40px);
         position: absolute;

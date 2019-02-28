@@ -2,7 +2,7 @@
  * Created by bo.wang on 18/11/20.
  */
 import gridManager from 'gridmanager-angular-1.x';
-import '../js/index';
+import '../js/index.js';
 var app = angular.module("myApp", [gridManager]);
 app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', '$gridManager', function($window, $rootScope, $scope, $element, $gridManager) {
     // $scope.table = $element[0].querySelector('table[grid-manager="gridManager-ccms-skin"]');
