@@ -10,7 +10,7 @@ GridManager适配组件库样式
 
 **注意：0.1.6版本以后使用时请手动引入css样式文件，文件路径：/node-modules/gridmanager-ccms-skin/css/index.css**
 
-```设置为表示本项目中对应字段的值```
+```"设置为" 表示本项目中对应字段的值```
 
 - `dataKey` 指定返回数据列表的key键值。原始值:data, 设置为'list'
 - `currentPageKey` 请求参数中当前页key键值。原始值:cPage, 设置为'pageNum'
@@ -25,10 +25,10 @@ GridManager适配组件库样式
 - `showFooterPageInfo` 是否显示底部工具: 分页描述信息。原始值:false, 设置为true
 - `showFooterGoTo` 是否显示底部工具: 快捷跳转。原始值:true, 设置为false
 - `showFooterCheckedInfo` 是否显示底部工具: 选中项描述信息。原始值:true, 设置为false
-- `loadingTemplate` 数据加载时loading模版。设置默认loading模版
+- `loadingTemplate` 数据加载时loading样式模版。设置默认loading模版
 - `skinClassName` 皮肤样式所使用的className。原始值:'', 设置为'ccms-skin'
-- `configInfo` 配置列自定义提示信息。原始值:'', 设置为'自定义字段可在列表拖拽调整排序'
-- `emptyTemplate` 数据为空时默认html模版。
-- `ajaxPageTemplate` 页脚自定以html模版。
+- `configInfo` 配置列自定义提示信息。原始值:'配置列的显示状态', 设置为'自定义字段可在列表拖拽调整排序'
+- `emptyTemplate` 数据为空时自定义html模版。
+- `ajaxPageTemplate` 页脚自定义html模版。
 
 
