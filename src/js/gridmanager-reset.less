@@ -107,6 +107,12 @@
             padding: 7px;
             vertical-align: middle;
         }
+        /* 无总页模式不显示总条数 */
+        &[no-totals-mode="true"] {
+            .totals-count {
+                display: none;
+            }
+        }
         .refresh-action {
             color: #666;
             i {
@@ -156,6 +162,7 @@
             }
         }
     }
+
     .gm-ccms-loading{
         width: 100%;
         height: calc(100% - 40px);
@@ -170,7 +177,7 @@
                 padding-top: 100%;
             }
             .circular {
-                animation: gmCircleRoate 1s linear infinite;
+                animation: gmCircleRotate 1s linear infinite;
                 height: 50px;
                 width: 50px;
                 transform-origin: center center;
@@ -193,7 +200,7 @@
         }
     }
 }
-@keyframes gmCircleRoate{
+@keyframes gmCircleRotate{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
