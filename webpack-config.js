@@ -4,6 +4,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const genRules = require('./webpack-common.loader');
 const buildPath = path.join(__dirname, "dist");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 const config = {
     mode: 'production',
 
@@ -39,6 +41,8 @@ const config = {
 
 	// 以插件形式定制webpack构建过程
 	plugins: [
+		// 删除dist目录
+		new CleanWebpackPlugin(),
 		// 将文件复制到构建目录
 		// CopyWebpackPlugin-> https://github.com/webpack-contrib/copy-webpack-plugin
 		new CopyWebpackPlugin([
