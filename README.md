@@ -8,8 +8,6 @@ GridManager适配组件库样式
 
 ## 修改原始配置项
 
-**注意：0.1.6版本以后使用时请手动引入css样式文件，文件路径：/node-modules/gridmanager-ccms-skin/css/index.css**
-
 ```"设置为" 表示本项目中对应字段的值```
 
 - `dataKey` 指定返回数据列表的key键值。原始值:data, 设置为'list'

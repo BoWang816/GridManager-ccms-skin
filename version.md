@@ -1,5 +1,10 @@
 # GridManager-ccms-skin
 
+## v0.1.7
+
+- 回退将css与js打包到同一个文件中
+- webpack打包新增cleanWebpackPlugin插件
+
 ## v0.1.6
 
 - 升级webpack4
