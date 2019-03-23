@@ -22,9 +22,6 @@ GridManager适配组件库样式
 - `disableLine` 配置是否禁用单元格分割线。原始值:false, 设置为true
 - `supportMenu` 配置是否支持右键菜单功能，禁用后右键功能将失效。原始值:true, 设置为false
 - `isIconFollowText` 设置表头的icon图标是否跟随文本。原始值:false, 设置为true,
-- `showFooterPageInfo` 是否显示底部工具: 分页描述信息。原始值:false, 设置为true
-- `showFooterGoTo` 是否显示底部工具: 快捷跳转。原始值:true, 设置为false
-- `showFooterCheckedInfo` 是否显示底部工具: 选中项描述信息。原始值:true, 设置为false
 - `loadingTemplate` 数据加载时loading样式模版。设置默认loading模版
 - `skinClassName` 皮肤样式所使用的className。原始值:'', 设置为'ccms-skin'
 - `configInfo` 配置列自定义提示信息。原始值:'配置列的显示状态', 设置为'自定义字段可在列表拖拽调整排序'
