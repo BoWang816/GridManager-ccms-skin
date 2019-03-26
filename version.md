@@ -1,5 +1,11 @@
 # GridManager-ccms-skin
 
+## v0.1.8
+
+- 清除无用样式以及配置项
+- 优化Loading样式
+- 更新Readme
+
 ## v0.1.7
 
 - 回退将css与js打包到同一个文件中
