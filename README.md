@@ -28,10 +28,10 @@ ajaxPageTemplate | 页脚自定义html模版 | - | - |
 
 ## 配置项修改后效果图
 
-原始配置效果：
+- 原始配置效果：
 ![old.jpg](https://i.loli.net/2019/03/26/5c99dd393524b.jpg)
 
-本项目配置效果：
+- 本项目配置效果：
 ![new.jpg](https://i.loli.net/2019/03/26/5c99dd3939a77.jpg)
 
 ## 依赖项目
