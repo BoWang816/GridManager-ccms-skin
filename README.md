@@ -28,12 +28,26 @@ ajaxPageTemplate | 页脚自定义html模版 | - | - |
 
 ## 配置项修改后效果图
 
-- 原始配置效果：
-![old.jpg](https://i.loli.net/2019/03/26/5c99dd393524b.jpg)
+- 存在数据时：
+	- 原始配置效果：
+	![old.jpg](https://i.loli.net/2019/03/26/5c99dd393524b.jpg)
+	
+	- 本项目配置效果：
+	![new.jpg](https://i.loli.net/2019/03/26/5c99dd3939a77.jpg)
 
-- 本项目配置效果：
-![new.jpg](https://i.loli.net/2019/03/26/5c99dd3939a77.jpg)
-
+- 数据为空时：
+	- 原始配置效果：
+	![oldEmpty.jpg](https://i.loli.net/2019/03/26/5c99de57c3860.jpg)
+	
+	- 本项目配置效果：
+	![newEmpty.jpg](https://i.loli.net/2019/03/26/5c99de57c0d09.jpg)
+	
+- 数据加载loading：
+	- 原始配置效果：
+	![oldLoading.jpg](https://i.loli.net/2019/03/26/5c99df3add745.jpg)
+	- 本项目配置效果：
+	![newLoading.jpg](https://i.loli.net/2019/03/26/5c99e11669ed8.jpg)
+	
 ## 依赖项目
 
 [gridmanager-angular-1.x](https://github.com/baukh789/GridManager-Angular-1.x)
