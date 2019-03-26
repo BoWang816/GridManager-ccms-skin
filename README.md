@@ -46,7 +46,7 @@ ajaxPageTemplate | 页脚自定义html模版 | - | - |
 	- 原始配置效果：
 	![oldLoading.jpg](https://i.loli.net/2019/03/26/5c99df3add745.jpg)
 	- 本项目配置效果：
-	![newLoading.jpg](https://i.loli.net/2019/03/26/5c99e11669ed8.jpg)
+	![newLoading.jpg](https://i.loli.net/2019/03/26/5c99e1a27e4bd.jpg)
 	
 ## 依赖项目
 
