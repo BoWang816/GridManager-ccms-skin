@@ -40,7 +40,7 @@
         "clean-webpack-plugin": "^2.0.0",
         "css-loader": "^0.28.10",
         "express": "^4.16.3",
-        "gridmanager-angular-1.x": "^0.1.13",
+        "gridmanager-angular-1.x": "^0.1.15",
         "html-loader": "^0.5.5",
         "less": "^3.8.1",
         "less-loader": "^4.1.0",
