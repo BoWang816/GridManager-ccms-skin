@@ -7,9 +7,23 @@
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <script src="../../js/app.js"></script>
 </head>
-<body ng-app="myApp">
-    <div class="grid-main" ng-controller="AppController as vm">
-        <grid-manager option="option"></grid-manager>
+<body ng-app="myApp" ng-controller="AppController as vm">
+    <div class="grid-main">
+        <grid-manager option="option" ng-if="!isDestroy"></grid-manager>
+    </div>
+
+    <div class="operate-main">
+        <span>方法示例：</span>
+        <button ng-click="init()">初始化</button>
+        <button ng-click="getVersion()">获取前版本信息</button>
+        <button ng-click="getGridName()">获取表格名称</button>
+        <button ng-click="cleanData()">清除数据</button>
+        <button ng-click="refreshGrid()">刷新数据</button>
+        <button ng-click="getInfo()">获取表格所有信息</button>
+        <button ng-click="getMemoryInfo()">获取表格记忆信息</button>
+        <button ng-click="clear()">清除记忆数据</button>
+        <button ng-click="exportGridToXls()">导出数据</button>
+        <button ng-click="destroy()">销毁实例</button>
     </div>
 </body>
 </html>

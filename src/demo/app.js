@@ -3,34 +3,78 @@
  */
 import gridManager from 'gridmanager-angular-1.x';
 import '../js/index.js';
-var app = angular.module("myApp", [gridManager]);
+let app = angular.module("myApp", [gridManager]);
 app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', '$gridManager', function($window, $rootScope, $scope, $element, $gridManager) {
-    // $scope.table = $element[0].querySelector('table[grid-manager="gridManager-ccms-skin"]');
-    $scope.testClick = (row) => {
-        console.log('click', row);
-    };
-    $scope.disableConfig = function() {
-        console.log($scope);
-        $gridManager.setConfigVisible('gridManager-ccms-skin');
-    };
-    $scope.deleteRowData = function(row) {
-        if(window.confirm('确认要删除['+row.info+']?')){
-            console.log('----删除操作开始----');
-            $gridManager.refreshGrid('gridManager-ccms-skin');
-            console.log('数据没变是正常的, 因为这只是个示例,并不会真实删除数据.');
-            console.log('----删除操作完成----');
-        }
-    };
-    $scope.showTh = function() {
-        const dom = document.querySelectorAll('.th-wrap');
-        $gridManager.showTh('gridManager-ccms-skin', dom);
+    $scope.isDestroy = false;
+    // 销毁实例
+    $scope.destroy = () => {
+        $scope.isDestroy = true;
+        console.log('销毁实例');
+        // 原生写法1
+        // $gridManager.destroy('gridManager-ccms-skin');
 
+        //原生写法2
+        // const table = document.querySelector('table');
+        // $gridManager.destroy(table);
     };
-    $scope.hideTh = function() {
-        const dom = document.querySelectorAll('.th-wrap');
-        $gridManager.hideTh('gridManager-ccms-skin',dom);
 
+    // 清除数据
+    $scope.cleanData = function() {
+        console.log('清除数据');
+        $gridManager.cleanData('gridManager-ccms-skin');
     };
+
+    // 刷新数据
+    $scope.refreshGrid = function() {
+        console.log('刷新数据');
+        $gridManager.refreshGrid('gridManager-ccms-skin');
+    };
+
+    // 获取版本信息
+    $scope.getVersion = function() {
+        console.log('版本信息');
+       alert('当前版本为：' + $gridManager.version);
+    };
+
+    // 清除记忆信息
+    $scope.clear = function() {
+        console.log('清除记忆');
+        $gridManager.clear('gridManager-ccms-skin');
+    };
+
+    // 获取表格名称
+    $scope.getGridName = function() {
+        console.log('表格名称');
+        alert('当前表格名称为：' + $scope.option.gridManagerName);
+    };
+
+    // 初始化示例
+    $scope.init = function() {
+        console.log('初始化实例');
+        $scope.isDestroy = false;
+
+        // 原生写法
+        // document.querySelector('table').GM('init', $scope.option);
+    };
+
+    // 获取所有配置信息
+    $scope.getInfo = function() {
+        console.log('获取表格所有信息');
+        console.log($gridManager.get('gridManager-ccms-skin'));
+    };
+
+    // 获取记忆信息
+    $scope.getMemoryInfo = function() {
+        console.log('获取表格记忆信息');
+        console.log($gridManager.getLocalStorage('gridManager-ccms-skin'));
+    };
+
+    // 导出表格数据
+    $scope.exportGridToXls = function() {
+        console.log('导出数据');
+        $gridManager.exportGridToXls('gridManager-ccms-skin', 'tableInfo', false);
+    };
+
     // 常量: 搜索条件
     $scope.TYPE_MAP = {
         '1': 'HTML/CSS',
@@ -47,8 +91,6 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         height: '100%',
         dataKey: 'data',
         totalsKey: 'totals',
-        // supportAjaxPage:true,
-        // isCombSorting: true,
         ajax_data: function () {
             return 'https://www.lovejavascript.com/blogManager/getBlogList';
         },
