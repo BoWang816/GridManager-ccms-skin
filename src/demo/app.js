@@ -75,6 +75,13 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         $gridManager.exportGridToXls('gridManager-ccms-skin', 'tableInfo', false);
     };
 
+    // 获取选中行数据
+    $scope.getCheckedData = function() {
+        console.log('获取选中数据');
+        $gridManager.getCheckedData('gridManager-ccms-skin');
+        console.log($gridManager.getCheckedData('gridManager-ccms-skin'));
+    };
+
     // 常量: 搜索条件
     $scope.TYPE_MAP = {
         '1': 'HTML/CSS',
@@ -95,6 +102,12 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
             return 'https://www.lovejavascript.com/blogManager/getBlogList';
         },
         ajax_type: 'POST',
+        // 打开可选择序号
+        supportCheckbox: true,
+        // 使用行选中功能
+        useRowCheck: true,
+        // 显示表格底部被选中行条数
+        showFooterCheckedInfo: true,
 
         // 使用无总页模式
         // useNoTotalsMode: true,
