@@ -139,7 +139,6 @@
                     border: none !important;
                     background: #f6f6f6 !important;
                     padding: 7px 10px;
-                    //display: none;
                     > svg {
                         width: 16px;
                         height: 16px;
@@ -148,12 +147,6 @@
                     &.disabled > svg {
                         fill: #d1d1d1 !important;
                     }
-                    //&.first-page,
-                    //&.previous-page,
-                    //&.next-page,
-                    //&.last-page {
-                    //    display: block;
-                    //}
                     &.previous-page,
                     &.first-page {
                         transform: rotate(180deg) !important;
@@ -169,10 +162,12 @@
         position: absolute;
         top: 40px;
         left: 0;
-
         .loader{
             &:before {
+                background: #FFF;
+                opacity: 0.7;
                 content: '';
+                z-index: 999;
                 display: block;
                 padding-top: 100%;
             }
