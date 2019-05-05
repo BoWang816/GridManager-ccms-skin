@@ -1,5 +1,10 @@
 # GridManager-ccms-skin
 
+## v0.1.9
+
+- 配合gridManager0.2.8版本，调整部分样式；
+- demo新增多种方法调用测试；
+
 ## v0.1.8
 
 - 清除无用样式以及配置项
