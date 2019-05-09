@@ -102,15 +102,15 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
             return 'https://www.lovejavascript.com/blogManager/getBlogList';
         },
         ajax_type: 'POST',
+        // 显示列线条
+        disableLine: false,
         // 打开可选择序号
         supportCheckbox: true,
         // 使用行选中功能
         useRowCheck: true,
         // 显示表格底部被选中行条数
         showFooterCheckedInfo: true,
-
-        // 使用无总页模式
-        // useNoTotalsMode: true,
+        // 列配置
         columnData: [
             {
                 key: 'pic',
