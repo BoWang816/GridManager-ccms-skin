@@ -1,5 +1,10 @@
 # GridManager-ccms-skin
 
+## v0.2.0
+
+- 升级gridManager-angular-1.x版本；
+- 调整loading样式遮盖表头区域；
+
 ## v0.1.9
 
 - 配合gridManager0.2.8版本，调整部分样式；
