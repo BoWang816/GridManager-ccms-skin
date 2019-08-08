@@ -1,5 +1,10 @@
 # GridManager-ccms-skin
 
+## v0.2.1
+
+- 升级gridManager-angular-1.x版本；
+- 翻页区域页面显示当页数据条数切换select组件；
+
 ## v0.2.0
 
 - 升级gridManager-angular-1.x版本；

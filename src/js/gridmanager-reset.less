@@ -97,7 +97,8 @@
         border: 1px solid transparent;
         .change-size {
             position: absolute !important;
-            right: 0 !important;
+            right: 0;
+            top: 6px;
         }
         .totals-count {
             margin-left: 2px;
@@ -105,6 +106,9 @@
             height: 30px;
             padding: 7px;
             vertical-align: middle;
+        }
+        .goto-page {
+            padding: 1px 10px;
         }
         /* 无总页模式不显示总条数 */
         &[no-totals-mode="true"] {
