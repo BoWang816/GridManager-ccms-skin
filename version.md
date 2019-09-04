@@ -1,5 +1,9 @@
 # GridManager-ccms-skin
 
+## v0.2.2
+
+- 配合表格组件，删除该组件中的loading动画；
+
 ## v0.2.1
 
 - 升级gridManager-angular-1.x版本；
