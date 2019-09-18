@@ -104,6 +104,8 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         ajax_type: 'POST',
         // 显示列线条
         disableLine: false,
+        // 开启记忆功能
+        disableCache: false,
         // 打开可选择序号
         supportCheckbox: true,
         // 使用行选中功能
