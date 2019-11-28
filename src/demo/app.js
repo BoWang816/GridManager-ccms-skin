@@ -112,6 +112,8 @@ app.controller('AppController', ['$window', '$rootScope', '$scope', '$element', 
         useRowCheck: true,
         // 显示表格底部被选中行条数
         showFooterCheckedInfo: true,
+        // 默认支持分页
+        supportAjaxPage: true,
         // 列配置
         columnData: [
             {

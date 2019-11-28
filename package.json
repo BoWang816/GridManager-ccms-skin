@@ -1,6 +1,6 @@
 {
     "name": "gridmanager-ccms-skin",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "gridManager-skin for ccms",
     "main": "js/index.js",
     "scripts": {
